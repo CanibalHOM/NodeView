@@ -1,0 +1,8 @@
+.vsconfig
+Assembly-CSharp.csproj
+Assembly-CSharp-Editor.csproj
+Library/
+Packages/
+UserSettings/EditorUserSettings.asset
+UserSettings/Layouts/default-2021.dwlt
+NodeView.sln

@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4736299850683498975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89409d7238231984eb9cb8bb9163538c, type: 3}
+  m_Name: Exit
+  m_EditorClassIdentifier: 
+  guid: d59a5f694c724f24fb426dfb7d08061c
+  position: {x: 512, y: 4}
+  color: {r: 0, g: 1, b: 1, a: 1}
+  childs:
+    keyData:
+    - next
+    valueData:
+    - {fileID: 0}
+  value: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd203478f34b3a44195da0f12e428f6f, type: 3}
+  m_Name: Example
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 2452252112460854377}
+  exitNode: {fileID: -4736299850683498975}
+  nodes:
+  - {fileID: -4736299850683498975}
+  - {fileID: 2452252112460854377}
+  - {fileID: 7691625079962822861}
+  - {fileID: 889628268968991976}
+--- !u!114 &889628268968991976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89409d7238231984eb9cb8bb9163538c, type: 3}
+  m_Name: Action
+  m_EditorClassIdentifier: 
+  guid: f2a663a69eb25f5429c581cc1aedc044
+  position: {x: 359, y: 225}
+  color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  childs:
+    keyData:
+    - next
+    valueData:
+    - {fileID: -4736299850683498975}
+  value: 0
+--- !u!114 &2452252112460854377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89409d7238231984eb9cb8bb9163538c, type: 3}
+  m_Name: Root
+  m_EditorClassIdentifier: 
+  guid: 9bae73f3711d6c64e843a2407a781710
+  position: {x: -5, y: 4}
+  color: {r: 0, g: 1, b: 0, a: 1}
+  childs:
+    keyData:
+    - next
+    valueData:
+    - {fileID: 7691625079962822861}
+  value: 0
+--- !u!114 &7691625079962822861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0332a671c92eded4e9bede18fd0e581e, type: 3}
+  m_Name: String Action
+  m_EditorClassIdentifier: 
+  guid: d8aa378d480149b41b2cfa554ac8b213
+  position: {x: 214, y: 4}
+  color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  childs:
+    keyData:
+    - Yes
+    - No
+    valueData:
+    - {fileID: -4736299850683498975}
+    - {fileID: 889628268968991976}
+  value: 
